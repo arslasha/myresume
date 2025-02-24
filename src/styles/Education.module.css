@@ -1,0 +1,19 @@
+.education {
+    font-family: 'Arial', sans-serif;
+}
+
+.education div {
+    margin-bottom: 20px;
+}
+
+.education h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.education p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 3px 0;
+}

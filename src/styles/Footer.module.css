@@ -1,0 +1,16 @@
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-family: 'Arial', sans-serif;
+    animation: gradientAnimation 10s infinite alternate ease-in-out;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,10 @@
+.section {
+    margin-top: 40px; /* Увеличенный отступ между секциями */
+    padding-top: 24px; /* Отступ сверху после линии */
+    border-top: 1px solid rgba(0, 0, 0, 0.3); /* Тонкая черная линия */
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}

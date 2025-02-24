@@ -1,0 +1,19 @@
+.experience {
+    font-family: 'Arial', sans-serif;
+}
+
+.experience div {
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.experience p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 3px 0;
+}

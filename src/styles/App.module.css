@@ -1,0 +1,95 @@
+@keyframes gradientAnimation {
+    0% {
+        background: #f8e8e8;
+    }
+    25% {
+        background: #e8f8f2;
+    }
+    50% {
+        background: #e8e9f8;
+    }
+    75% {
+        background: #f8f2e8;
+    }
+    100% {
+        background: #f8e8e8;
+    }
+}
+
+/* Применяем анимацию ко всему сайту */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: gradientAnimation 10s infinite alternate ease-in-out;
+    transition: background 1s;
+}
+
+/* Контейнер всего контента */
+.app {
+    width: 90%; /* Вместо фиксированного 800px */
+    max-width: 800px;
+    padding: 30px 20px;
+    background: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: left;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Плавное появление контента */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптация для мобилок */
+@media (max-width: 768px) {
+    .app {
+        padding: 20px 15px; /* Меньше отступов */
+        border-radius: 5px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2, h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Адаптация для маленьких экранов */
+@media (max-width: 480px) {
+    .app {
+        padding: 15px 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2, h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
