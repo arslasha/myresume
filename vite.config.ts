@@ -6,25 +6,26 @@ export default defineConfig({
     react(),
   ],
   server: {
-    host: true, // Доступ с других устройств
-    port: 3000, // Порт
-    open: true, // Автоматически открывать браузер
+    host: true,
+    port: 3000,
+    open: true,
     proxy: {
-      '/api': 'http://localhost:5000', // Прокси для API
+      '/api': 'http://localhost:5000',
     },
   },
   build: {
-    outDir: 'build', // Папка для сборки
-    sourcemap: true, // Генерация sourcemap
+    outDir: 'dist',
+    sourcemap: true,
   },
-  css: {
+  css : {
     modules: {
-      localsConvention: 'camelCase', // Имена классов в camelCase
+      localsConvention: "camelCase",
     },
   },
   resolve: {
     alias: {
-      '@': '/src', // Алиас для папки src
+      '@': '/src',
+
     },
   },
 });
